@@ -3,6 +3,11 @@ version: master
 runtime: python
 api_version: 1
 
+builtins:
+- remote_api: on
+- appstats: on
+- datastore_admin: on
+
 handlers:
 - url: .*
   script: 'drydrop_handler.py'
